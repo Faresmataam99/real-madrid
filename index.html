@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#B59E80]">
+    <header>
+      <nav class="bg-white flex justify-center items-center p-8">
+        <div>
+          <img
+            src="https://1000logos.net/wp-content/uploads/2020/09/Real-Madrid-logo.png"
+            alt=""
+            height="70"
+            width="70"
+          />
+        </div>
+      </nav>
+    </header>
+    <div
+      class="max-w-screen-md mx-auto p-4 border bg-gray-100 text-center mt-20"
+    >
+      <h1>
+        Total quantity:
+        <span id="total-quantity" class="font-bold text-xl underline">0 </span>€
+      </h1>
+      <h1>
+        Total price:
+        <span id="total-price" class="font-bold text-xl underline">0 </span>€
+      </h1>
+    </div>
+    <div
+      class=" flex max-w-screen-md mx-auto align-center justify-center gap-8 mt-8 flex-col md:flex-row xl:flex-row"
+    >
+      <div class="border rounded-sm px-3 py-1 relative group product-card ">
+        <img
+          src="https://imagedelivery.net/8UvgnujKc71BuSRDtL99OQ/fa91d5ec-bc38-473f-cd0c-e0eefb952d00/public"
+          alt=""
+          height="500"
+          width="500"
+        />
+        <h3 class="text-sm text-slate-600 underline font-bold text-white">Home kit</h3>
+        <div class="flex justify-between">
+          <h4 class="font-bold text-xl underline">
+            <span class="product-price">99.99</span> €
+          </h4>
+          <p class="text-lg font-semibold">
+            <button
+              class="bg-red-500 text-white py-0.5 px-3 rounded-full opacity-0 group-hover:opacity-100 transition minus-quantity-button"
+            >
+              -
+            </button>
+            <span class="quantity">0</span>
+          </p>
+        </div>
+        <button
+          class="bg-black text-white rounded-sm px-2 py-0.5 text-sm absolute top-1 left-1 opacity-0 group-hover:opacity-100 transition add-quantity-button"
+        >
+          Add to cart
+        </button>
+      </div>
+
+      <div class="border rounded-sm px-3 py-1 relative group product-card ">
+        <img
+          src="https://us.shop.realmadrid.com/_next/image?url=https%3A%2F%2Flegends.broadleafcloud.com%2Fapi%2Fasset%2Fcontent%2Frmcfmz0196-03.jpg%3FcontextRequest%3D%257B%2522forceCatalogForFetch%2522%3Afalse%2C%2522forceFilterByCatalogIncludeInheritance%2522%3Afalse%2C%2522forceFilterByCatalogExcludeInheritance%2522%3Afalse%2C%2522applicationId%2522%3A%252201H4RD9NXMKQBQ1WVKM1181VD8%2522%2C%2522tenantId%2522%3A%2522REAL_MADRID%2522%257D&w=1200&q=50"
+          alt=""
+          height="500"
+          width="500"
+        />
+        <h3 class="text-sm text-slate-600 underline font-bold text-white">Away kit</h3>
+        <div class="flex justify-between">
+          <h4 class="font-bold text-xl underline">
+            <span class="product-price">99.99</span> €
+          </h4>
+          <p class="text-lg font-semibold">
+            <button
+              class="bg-red-500 text-white py-0.5 px-3 rounded-full opacity-0 group-hover:opacity-100 transition minus-quantity-button"
+            >
+              -
+            </button>
+            <span class="quantity">0</span>
+          </p>
+        </div>
+        <button
+          class="bg-black text-white rounded-sm px-2 py-0.5 text-sm absolute top-1 left-1 opacity-0 group-hover:opacity-100 transition add-quantity-button"
+        >
+          Add to cart
+        </button>
+      </div>
+
+      <div class="border rounded-sm px-3 py-1 relative group product-card ">
+        <img
+          src="https://cdn.25gramos.com/wp-content/uploads/sites/2/2024/08/adidas-real-madrid-tercera-equipacion-2025-lenders-4-819x1024.jpg"
+          alt=""
+          height="500"
+          width="500"
+        />
+        <h3 class="text-sm text-slate-600 underline font-bold text-white">Originals </h3>
+        <div class="flex justify-between">
+          <h4 class="font-bold text-xl underline">
+            <span class="product-price">150.99</span> €
+          </h4>
+          <p class="text-lg font-semibold">
+            <button
+              class="bg-red-500 text-white py-0.5 px-3 rounded-full opacity-0 group-hover:opacity-100 transition minus-quantity-button"
+            >
+              -
+            </button>
+            <span class="quantity">0</span>
+          </p>
+        </div>
+        <button
+          class="bg-black text-white rounded-sm px-2 py-0.5 text-sm absolute top-1 left-1 opacity-0 group-hover:opacity-100 transition add-quantity-button"
+        >
+          Add to cart
+        </button>
+      </div>
+    </div>
+
+    <div
+      class="flex justify-center items-center flex-col md:flex-row xl-flex-row p-4 m-20"
+    >
+      <img
+        class="rounded-lg"
+        src="https://publish-p47754-e237306.adobeaemcloud.com/content/dam/portals/realmadrid-com/es-es/core-content/assemblies/products-and-services/multimedia/a_tercera-equipacion.jpg"
+        alt=""
+      />
+      <div
+        class="flex justify-center items-center flex-col md:flex-col xl:flex-col gap-5 m-3 font-playfair transition-all duration-200ms hover:text-white"
+      >
+        <h1 class="text-4xl font-bold tracking-">Somos el real madrid !</h1>
+        <h2 class="font-lg">
+          Somos el Real Madrid y nuestra historia se trata de ganar, reinar en
+          el trono de Europa como un rey, un rey vivo del fútbol que creó la
+          idea a los rivales del fútbol de que deberían pensárselo dos veces
+          antes de jugar.
+        </h2>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
